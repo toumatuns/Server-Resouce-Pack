@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>ToumaTuns Games</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#08080b;
+    color:white;
+}
+
+header{
+    height:60px;
+    padding:0 7%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#101015;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.logo span{color:#ff3d3d}
+
+nav a{
+    color:#aaa;
+    text-decoration:none;
+    margin-left:18px;
+}
+
+.hero{
+    min-height:calc(100vh - 60px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:30px;
+    background:radial-gradient(circle,#351010,#08080b 65%);
+}
+
+.hero h1{
+    font-size:clamp(50px,12vw,90px);
+}
+
+.hero h1 span{color:#ff3d3d}
+
+.hero p{
+    color:#aaa;
+    margin:15px auto 25px;
+    max-width:500px;
+}
+
+.button{
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:9px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:4px;
+}
+
+.red{
+    background:#ff3d3d;
+    color:white;
+}
+
+.dark{
+    border:1px solid #333;
+    color:white;
+}
+
+.info{
+    padding:50px 7%;
+    text-align:center;
+}
+
+.info h2{
+    margin-bottom:15px;
+}
+
+.info p{
+    color:#888;
+    max-width:600px;
+    margin:auto;
+    line-height:1.6;
+}
+
+footer{
+    padding:20px;
+    text-align:center;
+    color:#555;
+    border-top:1px solid #222;
+}
+
+@media(max-width:600px){
+    nav{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        ToumaTuns <span>Games</span>
+    </div>
+
+    <nav>
+        <a href="#game">Game</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero" id="game">
+
+    <div>
+
+        <h1>Gun<span>Rush</span>3D</h1>
+
+        <p>
+            Run. Collect power. Become stronger.
+        </p>
+
+        <a class="button red" href="#">
+            Google Play
+        </a>
+
+        <a class="button dark" href="#about">
+            About
+        </a>
+
+    </div>
+
+</section>
+
+<section class="info" id="about">
+
+    <h2>ToumaTuns Games</h2>
+
+    <p>
+        Independent game studio creating
+        fun mobile and PC games.
+    </p>
+
+</section>
+
+<footer>
+    © 2026 ToumaTuns Games
+</footer>
+
+</body>
+</html>
